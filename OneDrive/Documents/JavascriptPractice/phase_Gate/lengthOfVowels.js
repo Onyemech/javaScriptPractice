@@ -1,13 +1,12 @@
 let words = "Hello words";
 let vowels = "aeiou";
-let counter = 0;
+let number = 0;
 
-for(let count = 0; count < words.length; count++) {
-	for(let counter = 0; counter < words.length; counter++) {
-		if(words[counter] == vowels){
-			counter++
-		}
+
+for(let counter = 0; counter < words.length; counter++) {
+	if(vowels.includes(words[counter])){
+		number++
 	}
 }
 
-console.log(counter)
+console.log(number)
